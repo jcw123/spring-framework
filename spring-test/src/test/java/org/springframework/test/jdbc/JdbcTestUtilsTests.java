@@ -40,6 +40,10 @@ class JdbcTestUtilsTests {
 	private JdbcTemplate jdbcTemplate;
 
 
+	/**
+	 * 测试提交功能
+	 * @throws Exception
+	 */
 	@Test
 	void deleteWithoutWhereClause() throws Exception {
 		given(jdbcTemplate.update("DELETE FROM person")).willReturn(10);
